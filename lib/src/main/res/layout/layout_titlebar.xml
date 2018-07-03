@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lt_rl_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@android:color/black"
+    android:layout_height="@dimen/dimen_45">
+
+    <TextView
+        android:id="@+id/lt_tv_titlebar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:drawablePadding="@dimen/dimen_5"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_15"
+        tools:text="返回"
+        tools:drawableLeft="@drawable/icon_back_white"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_14" />
+
+    <TextView
+        android:id="@+id/lt_tv_titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        tools:text="标题"
+        android:maxLength="9"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_18" />
+
+    <TextView
+        android:id="@+id/lt_tv_titlebar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:drawablePadding="@dimen/dimen_5"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_15"
+        tools:text="右边"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_14" />
+
+    <ImageView
+        android:id="@+id/lt_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/lt_tv_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0.5"
+        android:layout_alignParentBottom="true"
+        android:background="#e1e1e1"
+        android:visibility="gone" />
+
+</RelativeLayout>
